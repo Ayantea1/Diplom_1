@@ -4,9 +4,6 @@ import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
-import java.util.Arrays;
-
 import static praktikum.IngredientType.*;
 
 @RunWith(Parameterized.class)
@@ -26,11 +23,5 @@ public class IngredientTypeTest extends TestCase {
     public void testValuesOf(){
         assertTrue(IngredientType.valueOf(type) == SAUCE || IngredientType.valueOf(type)==FILLING);
     }
-
-  //  public void testValues() {
-   //     var arr  = Arrays.toString(IngredientType.values());
-   //     assertEquals("[SAUCE, FILLING]", arr);
-   // }
-
 
 }
